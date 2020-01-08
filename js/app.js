@@ -52,5 +52,17 @@ keywordsArr.forEach(function(keySelect) {
 
 $(() => keywordsArr.forEach());
 
+// let selectKey = () => {
+// $('option').on('select', keywordsArr.forEach());
+
+  // $('').show();
+  // $('').hide();
+// };
+
+// $(() => selectKey());
+
+
 // Use an event handler to respond when the user chooses an option from the select menu. Hide all of the images, then show those whose keyword matches the option chosen.
 
+
+//selector.on(event, callback);
