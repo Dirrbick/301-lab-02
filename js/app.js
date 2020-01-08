@@ -1,6 +1,6 @@
 'use strict';
 
-// let allhorns = [];
+let keywordsArr = ['narwhal', 'rhino', 'unicorn', 'unilego', 'triceratops', 'markhor', 'mouflon', 'addax', 'chameleon', 'lizard', 'dragon'];
 
 function Horns(item) {
   this.url = item.image_url;
@@ -42,3 +42,15 @@ Horns.loadHorns = () => {
 };
 
 $(() => Horns.readJson());
+
+// Create a <select> element which contains unique <option> elements extracted dynamically from the JSON file, one for each keyword.
+
+keywordsArr.forEach(function(keySelect) {
+  let keyOption = keySelect;
+  $('select').append(`<option>${keyOption}</option>`);
+});
+
+$(() => keywordsArr.forEach());
+
+// Use an event handler to respond when the user chooses an option from the select menu. Hide all of the images, then show those whose keyword matches the option chosen.
+
